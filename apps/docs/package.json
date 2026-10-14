@@ -1,0 +1,18 @@
+{
+  "name": "@switchboard/docs",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Switchboard documentation site",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
+    "lint": "echo \"No lint for docs yet\"",
+    "typecheck": "echo \"No typecheck for docs yet\""
+  },
+  "devDependencies": {
+    "vitepress": "^1.5.0",
+    "vue": "^3.5.13"
+  }
+}

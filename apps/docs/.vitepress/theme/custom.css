@@ -1,0 +1,111 @@
+:root {
+  --vp-c-brand-1: #0f766e;
+  --vp-c-brand-2: #0d9488;
+  --vp-c-brand-3: #14b8a6;
+  --vp-c-brand-soft: rgba(15, 118, 110, 0.12);
+
+  --vp-c-bg: #f7f9fb;
+  --vp-c-bg-alt: #eef2f6;
+  --vp-c-bg-elv: #ffffff;
+  --vp-c-bg-soft: #eef2f6;
+
+  --vp-c-text-1: #15202b;
+  --vp-c-text-2: #455466;
+  --vp-c-text-3: #6b7c8f;
+
+  --vp-c-border: #d5dbe3;
+  --vp-c-divider: #e2e8f0;
+  --vp-c-gutter: #e8edf2;
+
+  --vp-font-family-base: 'Lucida Grande', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  --vp-font-family-mono: ui-monospace, 'Cascadia Code', 'SF Mono', Menlo, Consolas, monospace;
+
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #ffffff;
+  --vp-button-brand-bg: #0f766e;
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #ffffff;
+  --vp-button-brand-hover-bg: #0d9488;
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: #ffffff;
+  --vp-button-brand-active-bg: #0f766e;
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #0f766e 30%, #0ea5e9);
+  --vp-home-hero-image-background-image: linear-gradient(160deg, #d8f3ef 0%, #dbeafe 55%, #eef2f6 100%);
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+.dark {
+  --vp-c-brand-1: #2dd4bf;
+  --vp-c-brand-2: #5eead4;
+  --vp-c-brand-3: #99f6e4;
+  --vp-c-brand-soft: rgba(45, 212, 191, 0.14);
+
+  --vp-c-bg: #0d131a;
+  --vp-c-bg-alt: #111923;
+  --vp-c-bg-elv: #141c27;
+  --vp-c-bg-soft: #1b2532;
+
+  --vp-c-text-1: #e8eef5;
+  --vp-c-text-2: #b0becd;
+  --vp-c-text-3: #8b9aab;
+
+  --vp-c-border: #2a3544;
+  --vp-c-divider: #243041;
+  --vp-c-gutter: #1b2532;
+
+  --vp-button-brand-text: #042f2e;
+  --vp-button-brand-bg: #2dd4bf;
+  --vp-button-brand-hover-text: #042f2e;
+  --vp-button-brand-hover-bg: #5eead4;
+  --vp-button-brand-active-text: #042f2e;
+  --vp-button-brand-active-bg: #2dd4bf;
+
+  --vp-home-hero-name-background: linear-gradient(120deg, #2dd4bf 20%, #7dd3fc);
+  --vp-home-hero-image-background-image: linear-gradient(160deg, #163832 0%, #1e3a5f 55%, #0d131a 100%);
+}
+
+.VPHero .name {
+  font-family: 'Trebuchet MS', 'Lucida Grande', 'Segoe UI', sans-serif;
+  letter-spacing: -0.03em;
+}
+
+.VPHero .text {
+  font-family: 'Trebuchet MS', 'Lucida Grande', 'Segoe UI', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.VPHero .tagline {
+  max-width: 36rem;
+}
+
+.VPFeature {
+  border-radius: 10px !important;
+}
+
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3 {
+  font-family: 'Trebuchet MS', 'Lucida Grande', 'Segoe UI', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.vp-doc table {
+  display: table;
+  width: 100%;
+}
+
+.vp-doc th {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.custom-block.tip {
+  border-color: var(--vp-c-brand-1);
+}
+
+.VPSidebarItem.level-0 > .item .text {
+  font-weight: 700;
+}

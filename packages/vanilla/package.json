@@ -1,0 +1,36 @@
+{
+  "name": "@switchboard/vanilla",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Vanilla JavaScript integration for Switchboard (not implemented)",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo coverage"
+  },
+  "dependencies": {
+    "@switchboard/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@switchboard/eslint-config": "workspace:*",
+    "@switchboard/tsconfig": "workspace:*",
+    "eslint": "^9.17.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  }
+}
