@@ -1,10 +1,28 @@
 {
   "name": "@switchboard/api-mock",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Fetch interception for Switchboard API mocks",
   "license": "MIT",
+  "author": "Switchboard Contributors",
   "type": "module",
   "sideEffects": false,
+  "keywords": [
+    "switchboard",
+    "api-mock",
+    "fetch",
+    "mocking",
+    "devtools",
+    "scenarios"
+  ],
+  "homepage": "https://github.com/senthilkumar979/switchboard/tree/main/packages/api-mock#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/senthilkumar979/switchboard.git",
+    "directory": "packages/api-mock"
+  },
+  "bugs": {
+    "url": "https://github.com/senthilkumar979/switchboard/issues"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -14,7 +32,10 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
   ],
   "scripts": {
     "build": "tsup",
@@ -22,7 +43,8 @@
     "test:watch": "vitest",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "clean": "rm -rf dist .turbo coverage"
+    "clean": "rm -rf dist .turbo coverage",
+    "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
     "@switchboard/core": "workspace:*"

@@ -54,3 +54,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          # Attest provenance when publishing from GitHub Actions
+          NPM_CONFIG_PROVENANCE: true

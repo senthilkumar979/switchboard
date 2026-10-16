@@ -1,10 +1,28 @@
 {
   "name": "@switchboard/core",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Framework-independent Switchboard engine",
   "license": "MIT",
+  "author": "Switchboard Contributors",
   "type": "module",
   "sideEffects": false,
+  "keywords": [
+    "switchboard",
+    "feature-flags",
+    "devtools",
+    "scenarios",
+    "frontend",
+    "development"
+  ],
+  "homepage": "https://github.com/senthilkumar979/switchboard/tree/main/packages/core#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/senthilkumar979/switchboard.git",
+    "directory": "packages/core"
+  },
+  "bugs": {
+    "url": "https://github.com/senthilkumar979/switchboard/issues"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -14,7 +32,10 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
   ],
   "scripts": {
     "build": "tsup",
@@ -23,7 +44,8 @@
     "test:watch": "vitest",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "clean": "rm -rf dist .turbo coverage"
+    "clean": "rm -rf dist .turbo coverage",
+    "prepublishOnly": "pnpm run build"
   },
   "devDependencies": {
     "@switchboard/eslint-config": "workspace:*",

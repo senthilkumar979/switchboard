@@ -67,13 +67,13 @@ export default defineConfig({
     ],
     outline: { level: [2, 3] },
     search: { provider: 'local' },
-    socialLinks: [{ icon: 'github', link: 'https://github.com/switchboard-dev/switchboard' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/senthilkumar979/switchboard' }],
     footer: {
       message: 'MIT Licensed open-source developer tooling',
       copyright: 'Switchboard contributors',
     },
     editLink: {
-      pattern: 'https://github.com/switchboard-dev/switchboard/edit/main/apps/docs/:path',
+      pattern: 'https://github.com/senthilkumar979/switchboard/edit/main/apps/docs/:path',
       text: 'Edit this page',
     },
   },

@@ -1,12 +1,30 @@
 {
   "name": "@switchboard/devtools",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Framework-independent Switchboard developer panel",
   "license": "MIT",
+  "author": "Switchboard Contributors",
   "type": "module",
   "sideEffects": [
     "./dist/index.js"
   ],
+  "keywords": [
+    "switchboard",
+    "devtools",
+    "web-components",
+    "feature-flags",
+    "scenarios",
+    "panel"
+  ],
+  "homepage": "https://github.com/senthilkumar979/switchboard/tree/main/packages/devtools#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/senthilkumar979/switchboard.git",
+    "directory": "packages/devtools"
+  },
+  "bugs": {
+    "url": "https://github.com/senthilkumar979/switchboard/issues"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -16,7 +34,10 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
   ],
   "scripts": {
     "build": "tsup",
@@ -25,7 +46,8 @@
     "test:watch": "vitest",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "clean": "rm -rf dist .turbo coverage"
+    "clean": "rm -rf dist .turbo coverage",
+    "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
     "@switchboard/core": "workspace:*"

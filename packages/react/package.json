@@ -1,10 +1,28 @@
 {
   "name": "@switchboard/react",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "React adapter for Switchboard",
   "license": "MIT",
+  "author": "Switchboard Contributors",
   "type": "module",
   "sideEffects": false,
+  "keywords": [
+    "switchboard",
+    "react",
+    "feature-flags",
+    "devtools",
+    "scenarios",
+    "hooks"
+  ],
+  "homepage": "https://github.com/senthilkumar979/switchboard/tree/main/packages/react#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/senthilkumar979/switchboard.git",
+    "directory": "packages/react"
+  },
+  "bugs": {
+    "url": "https://github.com/senthilkumar979/switchboard/issues"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -14,7 +32,10 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
   ],
   "scripts": {
     "build": "tsup",
@@ -23,7 +44,8 @@
     "test:watch": "vitest",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "clean": "rm -rf dist .turbo coverage"
+    "clean": "rm -rf dist .turbo coverage",
+    "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
     "@switchboard/core": "workspace:*",

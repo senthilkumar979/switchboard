@@ -27,7 +27,7 @@ When resumed:
 - Publishing workflow (Changesets + GitHub Actions)
 - Versioning and changelog polish; `@switchboard/api-mock` is publishable
 
-First npm publish: merge a Version Packages PR after `NPM_TOKEN` is configured on the repo.
+First npm publish (`0.1.0`): ensure GitHub Actions secret `NPM_TOKEN` is set, then push/merge to `main` so the Release workflow can publish. See repo `RELEASING.md`.
 
 ## Ideas under consideration
 

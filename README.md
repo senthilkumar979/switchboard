@@ -111,7 +111,7 @@ MIT — see [LICENSE](./LICENSE).
 
 ## Releasing
 
-See [RELEASING.md](./RELEASING.md). First publish requires a GitHub remote and an `NPM_TOKEN` secret.
+Publishable packages are at **0.1.0**. See [RELEASING.md](./RELEASING.md) — set the GitHub Actions `NPM_TOKEN` secret, then push `main` (or run `pnpm release` locally with an automation token).
 
 ## Contributing
 

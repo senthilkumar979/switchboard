@@ -16,7 +16,7 @@ hero:
       link: /api-reference
     - theme: alt
       text: View on GitHub
-      link: https://github.com/switchboard-dev/switchboard
+      link: https://github.com/senthilkumar979/switchboard
 
 features:
   - title: Feature flags
