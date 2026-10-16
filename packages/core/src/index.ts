@@ -37,5 +37,5 @@ export type {
   UserContext,
 } from './types.js';
 
-export const PACKAGE_NAME = '@switchboard/core' as const;
+export const PACKAGE_NAME = '@switchboard-js/core' as const;
 export const PACKAGE_VERSION = '0.0.0' as const;

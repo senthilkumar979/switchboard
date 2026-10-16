@@ -1,4 +1,4 @@
-import type { SwitchboardState } from '@switchboard/core';
+import type { SwitchboardState } from '@switchboard-js/core';
 
 import { apiHtml } from './api-tab.js';
 import { scenariosHtml } from './scenarios-tab.js';

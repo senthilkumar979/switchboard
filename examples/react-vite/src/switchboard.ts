@@ -1,4 +1,4 @@
-import { createSwitchboard } from '@switchboard/core';
+import { createSwitchboard } from '@switchboard-js/core';
 
 import { admin, boScenarios } from './boScenarios.js';
 

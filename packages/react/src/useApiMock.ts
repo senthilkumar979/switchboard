@@ -1,4 +1,4 @@
-import type { ApiMockRule, MockJsonPreset } from '@switchboard/core';
+import type { ApiMockRule, MockJsonPreset } from '@switchboard-js/core';
 
 import { useSwitchboardInstance } from './context.js';
 import { useSwitchboardSelector } from './useSwitchboardSelector.js';

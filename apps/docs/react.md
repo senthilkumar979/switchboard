@@ -1,17 +1,17 @@
 # React
 
-`@switchboard/react` wraps the core engine with a provider, hooks, and a panel component.
+`@switchboard-js/react` wraps the core engine with a provider, hooks, and a panel component.
 
 ## Install
 
 ```bash
-pnpm add @switchboard/react @switchboard/core
+pnpm add @switchboard-js/react @switchboard-js/core
 ```
 
 Optional:
 
 ```bash
-pnpm add @switchboard/devtools @switchboard/api-mock
+pnpm add @switchboard-js/devtools @switchboard-js/api-mock
 ```
 
 ## Provider
@@ -19,7 +19,7 @@ pnpm add @switchboard/devtools @switchboard/api-mock
 Pass either a pre-built `instance` or a `config` object (an instance is created for you).
 
 ```tsx
-import { SwitchboardProvider, SwitchboardPanel } from '@switchboard/react';
+import { SwitchboardProvider, SwitchboardPanel } from '@switchboard-js/react';
 import { exampleSwitchboard } from './switchboard';
 
 export function App() {
@@ -117,7 +117,7 @@ const role = useSwitchboardSelector((state) => state.user.role);
 ## Panel
 
 ```tsx
-import { SwitchboardPanel } from '@switchboard/react';
+import { SwitchboardPanel } from '@switchboard-js/react';
 
 {import.meta.env.DEV && <SwitchboardPanel />}
 ```
@@ -129,7 +129,7 @@ See [Developer Panel](/developer-panel).
 Do this once near app bootstrap (not inside every component render):
 
 ```ts
-import { enableApiMock } from '@switchboard/api-mock';
+import { enableApiMock } from '@switchboard-js/api-mock';
 import { exampleSwitchboard } from './switchboard';
 
 if (import.meta.env.DEV) {
@@ -140,8 +140,8 @@ if (import.meta.env.DEV) {
 ## Example app
 
 ```bash
-pnpm --filter @switchboard/example-react-next dev
-pnpm --filter @switchboard/example-react-vite dev
+pnpm --filter @switchboard-js/example-react-next dev
+pnpm --filter @switchboard-js/example-react-vite dev
 ```
 
 Employee BO UI with role gating, feature flags, and API failure scenarios over real Next APIs.

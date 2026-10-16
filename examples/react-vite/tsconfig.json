@@ -1,5 +1,5 @@
 {
-  "extends": "@switchboard/tsconfig/react-library.json",
+  "extends": "@switchboard-js/tsconfig/react-library.json",
   "compilerOptions": {
     "noEmit": true,
     "rootDir": "src"

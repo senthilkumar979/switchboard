@@ -1,4 +1,4 @@
-import type { ApiMockRule, Switchboard } from '@switchboard/core';
+import type { ApiMockRule, Switchboard } from '@switchboard-js/core';
 
 export type MockScope = 'global' | 'scenario';
 

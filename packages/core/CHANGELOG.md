@@ -1,4 +1,4 @@
-# @switchboard/core
+# @switchboard-js/core
 
 ## 0.1.0
 
@@ -12,4 +12,4 @@
 
 - 7dabd7c: Initial monorepo foundation and package stubs (Phase 0).
 - 7dabd7c: Phase 2 React adapter (Provider + hooks) and core snapshot caching for useSyncExternalStore.
-- 7dabd7c: Phase 7 release polish: `@switchboard/api-mock` is a public package; Changesets GitHub release workflow and release docs.
+- 7dabd7c: Phase 7 release polish: `@switchboard-js/api-mock` is a public package; Changesets GitHub release workflow and release docs.

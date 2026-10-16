@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
-import { createSwitchboard } from '@switchboard/core';
+import { createSwitchboard } from '@switchboard-js/core';
 
 import { enableApiMock } from './enableApiMock.js';
 

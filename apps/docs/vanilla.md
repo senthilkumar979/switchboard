@@ -1,11 +1,11 @@
 # Vanilla JavaScript
 
-Use `@switchboard/core` directly and optionally register the Web Component panel from `@switchboard/devtools`.
+Use `@switchboard-js/core` directly and optionally register the Web Component panel from `@switchboard-js/devtools`.
 
 ## Core only
 
 ```ts
-import { createSwitchboard } from '@switchboard/core';
+import { createSwitchboard } from '@switchboard-js/core';
 
 const switchboard = createSwitchboard({
   features: { newDashboard: false },
@@ -25,9 +25,9 @@ switchboard.subscribe((state) => {
 ## With the developer panel
 
 ```ts
-import { createSwitchboard } from '@switchboard/core';
-import { registerSwitchboardPanel } from '@switchboard/devtools';
-import { enableApiMock } from '@switchboard/api-mock';
+import { createSwitchboard } from '@switchboard-js/core';
+import { registerSwitchboardPanel } from '@switchboard-js/devtools';
+import { enableApiMock } from '@switchboard-js/api-mock';
 
 registerSwitchboardPanel();
 

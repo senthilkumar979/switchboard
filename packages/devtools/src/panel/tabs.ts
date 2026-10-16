@@ -1,4 +1,4 @@
-import type { SwitchboardState } from '@switchboard/core';
+import type { SwitchboardState } from '@switchboard-js/core';
 
 import type { PanelPrefs } from './types.js';
 

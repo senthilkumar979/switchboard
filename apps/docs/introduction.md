@@ -12,7 +12,7 @@ Frontend work often means toggling flags in remote dashboards, editing fixtures 
 
 ## Design principles
 
-1. **Framework-independent core** — `@switchboard/core` has no React/Angular dependency
+1. **Framework-independent core** — `@switchboard-js/core` has no React/Angular dependency
 2. **Modular packages** — adopt core alone, or add React, the panel, and API mocking as needed
 3. **Minimal runtime cost** — small in-memory engine; panel and fetch patch are opt-in
 4. **Development-only by default** — mount the panel and enable mocks only in `DEV` / non-prod builds
@@ -23,11 +23,11 @@ Frontend work often means toggling flags in remote dashboards, editing fixtures 
 
 | Package | Role |
 | --- | --- |
-| `@switchboard/core` | Engine: features, user, environments, scenarios, presets, mock rules |
-| `@switchboard/react` | Provider, hooks, React panel wrapper |
-| `@switchboard/devtools` | Framework-agnostic `<switchboard-panel>` Web Component |
-| `@switchboard/api-mock` | `enableApiMock()` fetch interceptor |
-| `@switchboard/angular` | Deferred (private stub) |
+| `@switchboard-js/core` | Engine: features, user, environments, scenarios, presets, mock rules |
+| `@switchboard-js/react` | Provider, hooks, React panel wrapper |
+| `@switchboard-js/devtools` | Framework-agnostic `<switchboard-panel>` Web Component |
+| `@switchboard-js/api-mock` | `enableApiMock()` fetch interceptor |
+| `@switchboard-js/angular` | Deferred (private stub) |
 
 ## What Switchboard is not
 

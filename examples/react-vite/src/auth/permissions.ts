@@ -1,4 +1,4 @@
-import type { UserContext } from '@switchboard/core';
+import type { UserContext } from '@switchboard-js/core';
 
 export function can(user: UserContext, permission: string): boolean {
   const permissions = Array.isArray(user.permissions) ? user.permissions : [];

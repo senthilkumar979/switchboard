@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { useFeatureFlag, useUserContext } from '@switchboard/react';
+import { useFeatureFlag, useUserContext } from '@switchboard-js/react';
 
 import { ApiError, type Order, type OrderStatus } from '../api/client.js';
 import { listOrders, updateOrderStatus } from '../api/endpoints.js';

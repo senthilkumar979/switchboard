@@ -11,10 +11,10 @@ Per-package release notes live in `packages/*/CHANGELOG.md`.
 
 First public release of:
 
-- `@switchboard/core`
-- `@switchboard/react`
-- `@switchboard/devtools`
-- `@switchboard/api-mock`
+- `@switchboard-js/core`
+- `@switchboard-js/react`
+- `@switchboard-js/devtools`
+- `@switchboard-js/api-mock`
 
 ### Added
 
@@ -23,6 +23,6 @@ First public release of:
 
 ### Changed
 
-- Phase 5 (Angular) deferred; `@switchboard/angular` remains a private stub
+- Phase 5 (Angular) deferred; `@switchboard-js/angular` remains a private stub
 
 See package changelogs for detailed notes.

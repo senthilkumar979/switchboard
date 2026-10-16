@@ -1,7 +1,7 @@
 import { cleanup, render, screen, act } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
-import { createSwitchboard } from '@switchboard/core';
+import { createSwitchboard } from '@switchboard-js/core';
 
 import {
   SwitchboardPanel,
@@ -12,7 +12,7 @@ import {
   useSwitchboard,
   useUserContext,
 } from './index.js';
-import type { SwitchboardPanelElement } from '@switchboard/devtools';
+import type { SwitchboardPanelElement } from '@switchboard-js/devtools';
 
 afterEach(() => {
   cleanup();

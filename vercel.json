@@ -1,0 +1,12 @@
+{
+  "buildCommand": "pnpm --filter @switchboard-js/web build",
+  "outputDirectory": "apps/web/dist",
+  "installCommand": "pnpm install",
+  "framework": null,
+  "rewrites": [
+    {
+      "source": "/((?!assets/|docs/|favicon\\.svg|robots\\.txt|sitemap\\.xml|og\\.png|og\\.jpg).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

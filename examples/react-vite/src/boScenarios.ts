@@ -1,4 +1,4 @@
-import type { ApiMockRule, Scenario, UserContext } from '@switchboard/core';
+import type { ApiMockRule, Scenario, UserContext } from '@switchboard-js/core';
 
 export const admin: UserContext = {
   id: 'emp-admin',

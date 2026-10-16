@@ -1,0 +1,35 @@
+{
+  "name": "@switchboard-js/web",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Switchboard marketing site and interactive demo",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build && node ./scripts/merge-docs.mjs",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@switchboard-js/api-mock": "workspace:*",
+    "@switchboard-js/core": "workspace:*",
+    "@switchboard-js/devtools": "workspace:*",
+    "@switchboard-js/react": "workspace:*",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@switchboard-js/eslint-config": "workspace:*",
+    "@switchboard-js/tsconfig": "workspace:*",
+    "@tailwindcss/vite": "^4.1.4",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.17.0",
+    "tailwindcss": "^4.1.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.6"
+  }
+}

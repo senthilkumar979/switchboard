@@ -6,18 +6,18 @@ The primary demo is a dual-app setup:
 
 | Package | Role | Port |
 | --- | --- | --- |
-| `@switchboard/example-react-next` | In-memory REST APIs | `3001` |
-| `@switchboard/example-react-vite` | Employee back-office UI | `5174` |
+| `@switchboard-js/example-react-next` | In-memory REST APIs | `3001` |
+| `@switchboard-js/example-react-vite` | Employee back-office UI | `5174` |
 
 ```bash
 pnpm install
 pnpm build
 
 # Terminal 1
-pnpm --filter @switchboard/example-react-next dev
+pnpm --filter @switchboard-js/example-react-next dev
 
 # Terminal 2
-pnpm --filter @switchboard/example-react-vite dev
+pnpm --filter @switchboard-js/example-react-vite dev
 ```
 
 Vite proxies browser `/api/*` calls to Next so Switchboard pathname mocks stay simple.
@@ -35,7 +35,7 @@ Configuration: `examples/react-vite/src/switchboard.ts`.
 
 ### Try this
 
-1. Start both apps and open http://localhost:5174
+1. Start both apps and open `http://localhost:5174`
 2. Look up `CUST-1001`, edit a product, update an order status
 3. Activate **Employee — Viewer** — edits should be disabled
 4. Activate **API — Products down** and reopen products for `CUST-1001` — expect a 500
@@ -53,11 +53,11 @@ Configuration: `examples/react-vite/src/switchboard.ts`.
 ## Docs site
 
 ```bash
-pnpm --filter @switchboard/docs dev
+pnpm --filter @switchboard-js/docs dev
 ```
 
 ## Playground
 
 ```bash
-pnpm --filter @switchboard/playground dev
+pnpm --filter @switchboard-js/web dev
 ```

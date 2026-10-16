@@ -25,7 +25,7 @@ export {
   PACKAGE_NAME as CORE_PACKAGE_NAME,
   PACKAGE_VERSION as CORE_PACKAGE_VERSION,
   createSwitchboard,
-} from '@switchboard/core';
+} from '@switchboard-js/core';
 
 export type {
   FeatureDefinition,
@@ -36,7 +36,7 @@ export type {
   SwitchboardConfig,
   SwitchboardState,
   UserContext,
-} from '@switchboard/core';
+} from '@switchboard-js/core';
 
-export const PACKAGE_NAME = '@switchboard/react' as const;
+export const PACKAGE_NAME = '@switchboard-js/react' as const;
 export const PACKAGE_VERSION = '0.0.0' as const;

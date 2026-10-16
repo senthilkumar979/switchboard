@@ -1,4 +1,4 @@
-import { API_MOCK_STATUS_CODES, type ApiMockRule, type SwitchboardState } from '@switchboard/core';
+import { API_MOCK_STATUS_CODES, type ApiMockRule, type SwitchboardState } from '@switchboard-js/core';
 
 import { escapeHtml } from './tabs.js';
 import type { ApiPickerState } from './types.js';

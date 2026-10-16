@@ -1,6 +1,6 @@
 import { useMemo, useRef, type ReactNode } from 'react';
 
-import { createSwitchboard, type Switchboard, type SwitchboardConfig } from '@switchboard/core';
+import { createSwitchboard, type Switchboard, type SwitchboardConfig } from '@switchboard-js/core';
 
 import { SwitchboardContext } from './context.js';
 

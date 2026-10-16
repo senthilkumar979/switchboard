@@ -5,13 +5,13 @@ Create a Switchboard instance, read a feature flag, and optionally mount the dev
 ## 1. Install
 
 ```bash
-pnpm add @switchboard/core
+pnpm add @switchboard-js/core
 ```
 
 For React apps also install the adapter (and optionally the panel + API mock packages):
 
 ```bash
-pnpm add @switchboard/react @switchboard/devtools @switchboard/api-mock
+pnpm add @switchboard-js/react @switchboard-js/devtools @switchboard-js/api-mock
 ```
 
 See [Installation](/installation) for the full matrix.
@@ -19,7 +19,7 @@ See [Installation](/installation) for the full matrix.
 ## 2. Create an instance
 
 ```ts
-import { createSwitchboard } from '@switchboard/core';
+import { createSwitchboard } from '@switchboard-js/core';
 
 export const switchboard = createSwitchboard({
   features: {
@@ -62,7 +62,7 @@ const unsubscribe = switchboard.subscribe((state) => {
 ## 4. React (recommended path)
 
 ```tsx
-import { SwitchboardProvider, useFeatureFlag, SwitchboardPanel } from '@switchboard/react';
+import { SwitchboardProvider, useFeatureFlag, SwitchboardPanel } from '@switchboard-js/react';
 import { switchboard } from './switchboard';
 
 export function App() {
@@ -89,7 +89,7 @@ function MainApp() {
 ## 5. Optional: API mocking
 
 ```ts
-import { enableApiMock } from '@switchboard/api-mock';
+import { enableApiMock } from '@switchboard-js/api-mock';
 
 const dispose = enableApiMock(switchboard);
 // call dispose() when tearing down the app shell
@@ -103,11 +103,11 @@ From the monorepo:
 
 ```bash
 pnpm install
-pnpm --filter @switchboard/example-react-next dev
-pnpm --filter @switchboard/example-react-vite dev
+pnpm --filter @switchboard-js/example-react-next dev
+pnpm --filter @switchboard-js/example-react-vite dev
 ```
 
-Open http://localhost:5174 — look up `CUST-1001`, then use the Switchboard launcher for roles and API failure scenarios.
+Open `http://localhost:5174` — look up `CUST-1001`, then use the Switchboard launcher for roles and API failure scenarios.
 
 ## Next
 

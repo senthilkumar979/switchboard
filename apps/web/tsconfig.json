@@ -1,7 +1,6 @@
 {
-  "extends": "@switchboard/tsconfig/base.json",
+  "extends": "@switchboard-js/tsconfig/react-library.json",
   "compilerOptions": {
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "noEmit": true,
     "rootDir": "src"
   },

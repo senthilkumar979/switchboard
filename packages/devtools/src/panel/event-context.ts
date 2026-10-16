@@ -1,4 +1,4 @@
-import type { Switchboard } from '@switchboard/core';
+import type { Switchboard } from '@switchboard-js/core';
 
 import type { ApiPickerState, PanelPrefs } from './types.js';
 

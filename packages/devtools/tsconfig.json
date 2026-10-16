@@ -1,5 +1,5 @@
 {
-  "extends": "@switchboard/tsconfig/library.json",
+  "extends": "@switchboard-js/tsconfig/library.json",
   "compilerOptions": {
     "outDir": "dist",
     "rootDir": "src"

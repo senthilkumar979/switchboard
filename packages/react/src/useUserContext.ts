@@ -1,4 +1,4 @@
-import type { UserContext } from '@switchboard/core';
+import type { UserContext } from '@switchboard-js/core';
 
 import { useSwitchboardInstance } from './context.js';
 import { useSwitchboardSelector } from './useSwitchboardSelector.js';

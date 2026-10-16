@@ -1,4 +1,4 @@
-import type { Switchboard } from '@switchboard/core';
+import type { Switchboard } from '@switchboard-js/core';
 
 import { handlePanelEvent } from './events.js';
 import { restoreFocus, snapshotFocus } from './focus.js';

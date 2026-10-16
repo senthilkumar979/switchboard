@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { useFeatureFlag } from '@switchboard/react';
+import { useFeatureFlag } from '@switchboard-js/react';
 
 import { ApiError } from '../api/client.js';
 import { getCustomer, getStats } from '../api/endpoints.js';

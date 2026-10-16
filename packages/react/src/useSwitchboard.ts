@@ -1,4 +1,4 @@
-import type { FeatureValue, Switchboard, SwitchboardState, UserContext } from '@switchboard/core';
+import type { FeatureValue, Switchboard, SwitchboardState, UserContext } from '@switchboard-js/core';
 
 import { useSwitchboardInstance } from './context.js';
 import { useSwitchboardSelector } from './useSwitchboardSelector.js';

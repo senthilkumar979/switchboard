@@ -1,6 +1,6 @@
 import { useEffect, useState, type FormEvent } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { useFeatureFlag, useUserContext } from '@switchboard/react';
+import { useFeatureFlag, useUserContext } from '@switchboard-js/react';
 
 import { ApiError, type Product } from '../api/client.js';
 import { listProducts, updateProduct } from '../api/endpoints.js';

@@ -8,13 +8,13 @@
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
   "ignore": [
-    "@switchboard/docs",
-    "@switchboard/playground",
-    "@switchboard/angular",
-    "@switchboard/vanilla",
-    "@switchboard/eslint-config",
-    "@switchboard/tsconfig",
-    "@switchboard/example-react-vite",
-    "@switchboard/example-react-next"
+    "@switchboard-js/docs",
+    "@switchboard-js/web",
+    "@switchboard-js/angular",
+    "@switchboard-js/vanilla",
+    "@switchboard-js/eslint-config",
+    "@switchboard-js/tsconfig",
+    "@switchboard-js/example-react-vite",
+    "@switchboard-js/example-react-next"
   ]
 }

@@ -1,0 +1,82 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Sora', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-surface: var(--surface);
+  --color-line: var(--line);
+  --color-code: var(--code);
+  --color-aside: var(--aside);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-fg: var(--accent-fg);
+}
+
+:root {
+  color-scheme: light;
+  --fg: #0f172a;
+  --muted: #475569;
+  --surface: #ffffff;
+  --line: rgba(15, 23, 42, 0.12);
+  --code: #f1f5f9;
+  --aside: rgba(255, 255, 255, 0.88);
+  --page: #f8fafc;
+  --grid: rgba(15, 23, 42, 0.05);
+  --glow-a: rgba(15, 118, 110, 0.16);
+  --glow-b: rgba(45, 212, 191, 0.1);
+  --accent: #0f766e;
+  --accent-soft: #ccfbf1;
+  --accent-fg: #ecfdf5;
+}
+
+html.dark {
+  color-scheme: dark;
+  --fg: #f1f5f9;
+  --muted: #94a3b8;
+  --surface: rgba(15, 23, 42, 0.72);
+  --line: rgba(148, 163, 184, 0.16);
+  --code: #0b1220;
+  --aside: rgba(2, 6, 23, 0.9);
+  --page: #020617;
+  --grid: rgba(148, 163, 184, 0.06);
+  --glow-a: rgba(45, 212, 191, 0.14);
+  --glow-b: rgba(15, 118, 110, 0.18);
+  --accent: #2dd4bf;
+  --accent-soft: rgba(45, 212, 191, 0.12);
+  --accent-fg: #042f2e;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  color: var(--fg);
+  background:
+    radial-gradient(1100px 560px at 8% -12%, var(--glow-a), transparent 55%),
+    radial-gradient(900px 480px at 100% 0%, var(--glow-b), transparent 48%), var(--page);
+}
+
+body::before {
+  content: '';
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent 80%);
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}

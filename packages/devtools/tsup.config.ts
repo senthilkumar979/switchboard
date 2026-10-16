@@ -8,5 +8,5 @@ export default defineConfig({
   clean: true,
   treeshake: true,
   splitting: false,
-  external: ['@switchboard/core'],
+  external: ['@switchboard-js/core'],
 });

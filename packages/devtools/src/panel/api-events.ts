@@ -1,4 +1,4 @@
-import type { Switchboard } from '@switchboard/core';
+import type { Switchboard } from '@switchboard-js/core';
 
 import { handleApiRuleAction } from './api-rule-events.js';
 import { patchApiMock, readMockScope } from './api-mock-patch.js';

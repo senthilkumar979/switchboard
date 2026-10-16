@@ -30,5 +30,5 @@ features:
   - title: API mocking
     details: Intercept fetch by pathname and method. Global rules or scenario-specific replacements.
   - title: Framework-agnostic core
-    details: One engine in @switchboard/core, with React bindings today. Angular is deferred.
+    details: One engine in @switchboard-js/core, with React bindings today. Angular is deferred.
 ---

@@ -1,4 +1,4 @@
-import type { SwitchboardPanelElement } from '@switchboard/devtools';
+import type { SwitchboardPanelElement } from '@switchboard-js/devtools';
 
 declare module 'react' {
   namespace JSX {

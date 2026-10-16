@@ -8,9 +8,9 @@ import {
   createSwitchboard,
 } from './index.js';
 
-describe('@switchboard/core package', () => {
+describe('@switchboard-js/core package', () => {
   it('exports package identity', () => {
-    expect(PACKAGE_NAME).toBe('@switchboard/core');
+    expect(PACKAGE_NAME).toBe('@switchboard-js/core');
     expect(PACKAGE_VERSION).toBe('0.0.0');
   });
 });

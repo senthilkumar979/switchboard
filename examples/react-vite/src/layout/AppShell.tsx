@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from 'react-router-dom';
-import { SwitchboardPanel, useFeatureFlag, useScenario, useUserContext } from '@switchboard/react';
+import { SwitchboardPanel, useFeatureFlag, useScenario, useUserContext } from '@switchboard-js/react';
 
 export function AppShell() {
   const { user } = useUserContext();

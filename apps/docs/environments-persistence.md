@@ -58,7 +58,7 @@ createSwitchboard({
 ### Custom adapter
 
 ```ts
-import type { PersistenceAdapter } from '@switchboard/core';
+import type { PersistenceAdapter } from '@switchboard-js/core';
 
 const sessionAdapter: PersistenceAdapter = {
   name: 'sessionStorage',

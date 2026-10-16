@@ -5,7 +5,7 @@ In-memory REST API for the Switchboard employee back-office demo.
 ## Run
 
 ```bash
-pnpm --filter @switchboard/example-react-next dev
+pnpm --filter @switchboard-js/example-react-next dev
 ```
 
 Listens on **http://localhost:3001**.
@@ -31,4 +31,4 @@ Known product/order IDs for Switchboard failure demos: `p1`, `p2`, `ord_1`, `ord
 | GET/PATCH | `/api/orders/[orderId]` |
 | GET | `/api/stats?customerNumber=` |
 
-Pair with `@switchboard/example-react-vite` (proxies `/api` here).
+Pair with `@switchboard-js/example-react-vite` (proxies `/api` here).

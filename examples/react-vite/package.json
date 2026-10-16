@@ -1,5 +1,5 @@
 {
-  "name": "@switchboard/example-react-vite",
+  "name": "@switchboard-js/example-react-vite",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -11,16 +11,16 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@switchboard/api-mock": "workspace:*",
-    "@switchboard/core": "workspace:*",
-    "@switchboard/react": "workspace:*",
+    "@switchboard-js/api-mock": "workspace:*",
+    "@switchboard-js/core": "workspace:*",
+    "@switchboard-js/react": "workspace:*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.18.4"
   },
   "devDependencies": {
-    "@switchboard/eslint-config": "workspace:*",
-    "@switchboard/tsconfig": "workspace:*",
+    "@switchboard-js/eslint-config": "workspace:*",
+    "@switchboard-js/tsconfig": "workspace:*",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "@vitejs/plugin-react": "^4.3.4",

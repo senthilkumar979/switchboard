@@ -1,4 +1,4 @@
-import type { ApiMockRule, HttpMethod, MockJsonPreset, Switchboard } from '@switchboard/core';
+import type { ApiMockRule, HttpMethod, MockJsonPreset, Switchboard } from '@switchboard-js/core';
 
 export function getRequestPathname(input: RequestInfo | URL): string {
   try {

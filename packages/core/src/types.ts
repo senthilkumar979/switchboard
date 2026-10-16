@@ -1,5 +1,5 @@
 /**
- * Public types for @switchboard/core.
+ * Public types for @switchboard-js/core.
  */
 
 export type FeatureValue = boolean;

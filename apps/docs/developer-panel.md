@@ -14,7 +14,7 @@ The panel is a **Shadow DOM Web Component** (`<switchboard-panel>`) that attache
 ### React
 
 ```tsx
-import { SwitchboardProvider, SwitchboardPanel } from '@switchboard/react';
+import { SwitchboardProvider, SwitchboardPanel } from '@switchboard-js/react';
 
 export function App() {
   return (
@@ -29,8 +29,8 @@ export function App() {
 ### Vanilla
 
 ```ts
-import { createSwitchboard } from '@switchboard/core';
-import { registerSwitchboardPanel } from '@switchboard/devtools';
+import { createSwitchboard } from '@switchboard-js/core';
+import { registerSwitchboardPanel } from '@switchboard-js/devtools';
 
 registerSwitchboardPanel();
 
@@ -74,10 +74,10 @@ Drawer width remains `min(600px, 92vw)`.
 
 ## Programmatic import / export
 
-State JSON helpers live on `@switchboard/devtools` for tooling — not as panel textareas:
+State JSON helpers live on `@switchboard-js/devtools` for tooling — not as panel textareas:
 
 ```ts
-import { serializeState, parseImportPayload, applyImportPayload } from '@switchboard/devtools';
+import { serializeState, parseImportPayload, applyImportPayload } from '@switchboard-js/devtools';
 
 const json = serializeState(switchboard.getState());
 applyImportPayload(switchboard, parseImportPayload(json));

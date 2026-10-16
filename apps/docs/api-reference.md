@@ -1,8 +1,8 @@
 # API Reference
 
-Primary entry: `@switchboard/core`.
+Primary entry: `@switchboard-js/core`.
 
-Related packages: `@switchboard/react`, `@switchboard/devtools`, `@switchboard/api-mock`.
+Related packages: `@switchboard-js/react`, `@switchboard-js/devtools`, `@switchboard-js/api-mock`.
 
 ---
 
@@ -11,7 +11,7 @@ Related packages: `@switchboard/react`, `@switchboard/devtools`, `@switchboard/a
 Creates a Switchboard instance.
 
 ```ts
-import { createSwitchboard } from '@switchboard/core';
+import { createSwitchboard } from '@switchboard-js/core';
 
 const switchboard = createSwitchboard({
   features: { newDashboard: false },
@@ -187,10 +187,10 @@ switchboard.reset(): void
 
 ---
 
-## `@switchboard/api-mock`
+## `@switchboard-js/api-mock`
 
 ```ts
-import { enableApiMock } from '@switchboard/api-mock';
+import { enableApiMock } from '@switchboard-js/api-mock';
 
 const dispose = enableApiMock(switchboard);
 dispose();
@@ -200,7 +200,7 @@ Also exported: `findMatchingApiMock`, `matchApiMockRule`, `getRequestPathname`, 
 
 ---
 
-## `@switchboard/devtools`
+## `@switchboard-js/devtools`
 
 ```ts
 import {
@@ -209,7 +209,7 @@ import {
   serializeState,
   parseImportPayload,
   applyImportPayload,
-} from '@switchboard/devtools';
+} from '@switchboard-js/devtools';
 ```
 
 | Export | Description |
@@ -221,7 +221,7 @@ import {
 
 ---
 
-## `@switchboard/react`
+## `@switchboard-js/react`
 
 | Export | Description |
 | --- | --- |

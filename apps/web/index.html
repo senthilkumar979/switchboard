@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switchboard — frontend state under your control</title>
+    <meta
+      name="description"
+      content="Inspect, simulate, and switch feature flags, users, scenarios, and API responses during development — without changing business logic."
+    />
+    <meta
+      name="keywords"
+      content="switchboard, feature flags, api mocking, developer tools, react, scenarios, frontend"
+    />
+    <meta name="theme-color" content="#0f766e" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://switchboard.mentorbridge.in/" />
+    <meta property="og:title" content="Switchboard — frontend state under your control" />
+    <meta
+      property="og:description"
+      content="Inspect, simulate, and switch feature flags, users, scenarios, and API responses during development."
+    />
+    <meta property="og:url" content="https://switchboard.mentorbridge.in/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Switchboard" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://switchboard.mentorbridge.in/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Switchboard — frontend state under your control" />
+    <meta
+      name="twitter:description"
+      content="Inspect, simulate, and switch feature flags, users, scenarios, and API responses during development."
+    />
+    <meta name="twitter:image" content="https://switchboard.mentorbridge.in/og.png" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "name": "Switchboard",
+            "url": "https://switchboard.mentorbridge.in/",
+            "description": "Universal development controls for frontend applications.",
+            "publisher": {
+              "@type": "Person",
+              "name": "Senthil Kumar Thangavel",
+              "url": "https://senthilkumar.mentorbridge.in"
+            }
+          },
+          {
+            "@type": "SoftwareSourceCode",
+            "name": "switchboard",
+            "description": "Universal development controls for frontend applications — feature flags, user simulation, scenarios, and API mocking.",
+            "url": "https://switchboard.mentorbridge.in/",
+            "codeRepository": "https://github.com/senthilkumar979/switchboard",
+            "programmingLanguage": ["TypeScript", "JavaScript"],
+            "runtimePlatform": "React 18+",
+            "license": "https://opensource.org/licenses/MIT"
+          }
+        ]
+      }
+    </script>
+    <script>
+      try {
+        if (localStorage.getItem('switchboard-theme') === 'dark') {
+          document.documentElement.classList.add('dark');
+          document.documentElement.style.colorScheme = 'dark';
+        }
+      } catch (_error) {
+        /* storage may be blocked */
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

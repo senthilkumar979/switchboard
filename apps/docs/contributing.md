@@ -40,11 +40,11 @@ Publishing is automated on `main` (Changesets Version PR → npm). See the repo 
 ## Package scripts
 
 ```bash
-pnpm --filter @switchboard/core test
-pnpm --filter @switchboard/devtools test
-pnpm --filter @switchboard/docs dev
-pnpm --filter @switchboard/example-react-next dev
-pnpm --filter @switchboard/example-react-vite dev
+pnpm --filter @switchboard-js/core test
+pnpm --filter @switchboard-js/devtools test
+pnpm --filter @switchboard-js/docs dev
+pnpm --filter @switchboard-js/example-react-next dev
+pnpm --filter @switchboard-js/example-react-vite dev
 ```
 
 ## Code guidelines
@@ -60,7 +60,7 @@ pnpm --filter @switchboard/example-react-vite dev
 Edit markdown under `apps/docs/`. Theme tokens live in `.vitepress/theme/custom.css`.
 
 ```bash
-pnpm --filter @switchboard/docs build
+pnpm --filter @switchboard-js/docs build
 ```
 
 ## License

@@ -1,4 +1,4 @@
-import type { Switchboard } from '@switchboard/core';
+import type { Switchboard } from '@switchboard-js/core';
 
 export interface ScenarioEventContext {
   instance: Switchboard | null;

@@ -1,6 +1,6 @@
 import { useEffect, useRef, type Ref } from 'react';
 
-import { registerSwitchboardPanel, type SwitchboardPanelElement } from '@switchboard/devtools';
+import { registerSwitchboardPanel, type SwitchboardPanelElement } from '@switchboard-js/devtools';
 
 import { useSwitchboardInstance } from './context.js';
 

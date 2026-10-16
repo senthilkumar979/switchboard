@@ -14,7 +14,7 @@ export type {
   PanelPosition,
 } from './panel/types.js';
 
-export { PACKAGE_NAME as CORE_PACKAGE_NAME } from '@switchboard/core';
+export { PACKAGE_NAME as CORE_PACKAGE_NAME } from '@switchboard-js/core';
 
-export const PACKAGE_NAME = '@switchboard/devtools' as const;
+export const PACKAGE_NAME = '@switchboard-js/devtools' as const;
 export const PACKAGE_VERSION = '0.0.0' as const;

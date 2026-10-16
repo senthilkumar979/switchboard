@@ -1,4 +1,4 @@
-import type { Switchboard, SwitchboardState, UserContext } from '@switchboard/core';
+import type { Switchboard, SwitchboardState, UserContext } from '@switchboard-js/core';
 
 import type { PanelExportPayload } from './types.js';
 

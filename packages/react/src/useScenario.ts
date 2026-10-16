@@ -1,4 +1,4 @@
-import type { Scenario } from '@switchboard/core';
+import type { Scenario } from '@switchboard-js/core';
 
 import { useSwitchboardInstance } from './context.js';
 import { useSwitchboardSelector } from './useSwitchboardSelector.js';

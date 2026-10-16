@@ -1,4 +1,4 @@
-# @switchboard/react
+# @switchboard-js/react
 
 ## 0.1.0
 
@@ -12,7 +12,7 @@
 ### Patch Changes
 
 - 7dabd7c: Initial monorepo foundation and package stubs (Phase 0).
-- 7dabd7c: Phase 7 release polish: `@switchboard/api-mock` is a public package; Changesets GitHub release workflow and release docs.
+- 7dabd7c: Phase 7 release polish: `@switchboard-js/api-mock` is a public package; Changesets GitHub release workflow and release docs.
 - Updated dependencies [7dabd7c]
 - Updated dependencies [7dabd7c]
 - Updated dependencies [7dabd7c]
@@ -21,5 +21,5 @@
 - Updated dependencies [7dabd7c]
 - Updated dependencies [7dabd7c]
 - Updated dependencies [7dabd7c]
-  - @switchboard/devtools@0.1.0
-  - @switchboard/core@0.1.0
+  - @switchboard-js/devtools@0.1.0
+  - @switchboard-js/core@0.1.0

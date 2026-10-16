@@ -1,6 +1,6 @@
 import { createContext, useContext } from 'react';
 
-import type { Switchboard } from '@switchboard/core';
+import type { Switchboard } from '@switchboard-js/core';
 
 export const SwitchboardContext = createContext<Switchboard | null>(null);
 

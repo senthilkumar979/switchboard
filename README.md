@@ -10,32 +10,42 @@ Inspect, modify, simulate, and manage application states during development — 
 - **User simulation** (role, permissions, custom fields)
 - **Scenarios** — named snapshots including optional API mocks
 - **Developer panel** — selection-only drawer (Web Component)
-- **API mocking** — pathname/`fetch` interception via `@switchboard/api-mock`
+- **API mocking** — pathname/`fetch` interception via `@switchboard-js/api-mock`
 - **React** bindings (`Provider`, hooks, panel wrapper)
 
 ## Status
 
 Phases 0–4, 6, and 7 are complete. Angular adapter (Phase 5) is **deferred**. See [TASKS.md](./TASKS.md) and the [docs roadmap](./apps/docs/roadmap.md).
 
+## Website
+
+Public site: [switchboard.mentorbridge.in](https://switchboard.mentorbridge.in)
+
+```bash
+pnpm --filter @switchboard-js/web dev
+```
+
+Marketing landing, interactive demo (`/demo`), capability pages, and VitePress docs merged at `/docs` on build. Deploy with Vercel using the root [`vercel.json`](./vercel.json) (custom domain `switchboard.mentorbridge.in`).
+
 ## Documentation
 
 ```bash
-pnpm --filter @switchboard/docs dev
+pnpm --filter @switchboard-js/docs dev
 ```
 
-Guides cover installation, core concepts, scenarios, the panel, API mocking, and the full API reference.
+Guides cover installation, core concepts, scenarios, the panel, API mocking, and the full API reference. On the public site they are served under `/docs/`.
 
 ## Monorepo
 
 ```text
 apps/
-  docs/           VitePress documentation
-  playground/     Local workspace playground
+  docs/           VitePress documentation (base /docs/)
+  web/            Marketing site + interactive demo
 packages/
-  core/           @switchboard/core
-  react/          @switchboard/react
-  devtools/       @switchboard/devtools
-  api-mock/       @switchboard/api-mock
+  core/           @switchboard-js/core
+  react/          @switchboard-js/react
+  devtools/       @switchboard-js/devtools
+  api-mock/       @switchboard-js/api-mock
   angular/        (private stub — Phase 5 deferred)
   vanilla/        (private stub)
 examples/
@@ -64,21 +74,22 @@ pnpm typecheck
 ### Develop
 
 ```bash
-pnpm --filter @switchboard/docs dev
+pnpm --filter @switchboard-js/web dev    # landing + demo :5173
+pnpm --filter @switchboard-js/docs dev   # docs only (base /docs/)
 
-# E-commerce BO demo (two terminals)
-pnpm --filter @switchboard/example-react-next dev   # APIs :3001
-pnpm --filter @switchboard/example-react-vite dev   # UI :5174
+# E-commerce BO example (two terminals)
+pnpm --filter @switchboard-js/example-react-next dev   # APIs :3001
+pnpm --filter @switchboard-js/example-react-vite dev   # UI :5174
 ```
 
 ### Quick library usage
 
 ```bash
-pnpm add @switchboard/core @switchboard/react @switchboard/devtools @switchboard/api-mock
+pnpm add @switchboard-js/core @switchboard-js/react @switchboard-js/devtools @switchboard-js/api-mock
 ```
 
 ```ts
-import { createSwitchboard } from '@switchboard/core';
+import { createSwitchboard } from '@switchboard-js/core';
 
 const switchboard = createSwitchboard({
   features: { newDashboard: false },
@@ -90,11 +101,11 @@ const switchboard = createSwitchboard({
 
 | Package | Description |
 | --- | --- |
-| `@switchboard/core` | Framework-independent engine |
-| `@switchboard/react` | React adapter |
-| `@switchboard/devtools` | Developer panel (Web Component) |
-| `@switchboard/api-mock` | Fetch interceptor for API mocks |
-| `@switchboard/angular` | Deferred (private stub) |
+| `@switchboard-js/core` | Framework-independent engine |
+| `@switchboard-js/react` | React adapter |
+| `@switchboard-js/devtools` | Developer panel (Web Component) |
+| `@switchboard-js/api-mock` | Fetch interceptor for API mocks |
+| `@switchboard-js/angular` | Deferred (private stub) |
 
 ## Principles
 

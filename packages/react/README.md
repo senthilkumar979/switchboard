@@ -1,17 +1,17 @@
-# `@switchboard/react`
+# `@switchboard-js/react`
 
 React bindings for Switchboard: provider, hooks, and panel wrapper.
 
 ## Install
 
 ```bash
-pnpm add @switchboard/react @switchboard/core
+pnpm add @switchboard-js/react @switchboard-js/core
 ```
 
 ## Quick example
 
 ```tsx
-import { SwitchboardProvider, useFeatureFlag, SwitchboardPanel } from '@switchboard/react';
+import { SwitchboardProvider, useFeatureFlag, SwitchboardPanel } from '@switchboard-js/react';
 
 export function App() {
   return (

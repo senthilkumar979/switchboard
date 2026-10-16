@@ -1,5 +1,5 @@
 {
-  "name": "@switchboard/api-mock",
+  "name": "@switchboard-js/api-mock",
   "version": "0.1.0",
   "description": "Fetch interception for Switchboard API mocks",
   "license": "MIT",
@@ -47,11 +47,11 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "@switchboard/core": "workspace:*"
+    "@switchboard-js/core": "workspace:*"
   },
   "devDependencies": {
-    "@switchboard/eslint-config": "workspace:*",
-    "@switchboard/tsconfig": "workspace:*",
+    "@switchboard-js/eslint-config": "workspace:*",
+    "@switchboard-js/tsconfig": "workspace:*",
     "eslint": "^9.17.0",
     "tsup": "^8.3.5",
     "typescript": "^5.7.2",

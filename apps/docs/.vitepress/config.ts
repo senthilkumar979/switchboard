@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   title: 'Switchboard',
   description: 'Universal development controls for frontend applications',
+  base: '/docs/',
   cleanUrls: true,
   lastUpdated: true,
   head: [
@@ -21,6 +22,8 @@ export default defineConfig({
     logo: undefined,
     siteTitle: 'Switchboard',
     nav: [
+      { text: 'Home', link: 'https://switchboard.mentorbridge.in/' },
+      { text: 'Demo', link: 'https://switchboard.mentorbridge.in/demo' },
       { text: 'Guide', link: '/getting-started' },
       { text: 'API', link: '/api-reference' },
       { text: 'Examples', link: '/examples' },

@@ -27,11 +27,11 @@ pnpm typecheck
 
 ## Phase discipline
 
-See [TASKS.md](./TASKS.md). Phases 0–4, 6, and 7 are complete. **Phase 5 (Angular) is deferred** — leave `@switchboard/angular` as a private stub unless that phase is explicitly resumed.
+See [TASKS.md](./TASKS.md). Phases 0–4, 6, and 7 are complete. **Phase 5 (Angular) is deferred** — leave `@switchboard-js/angular` as a private stub unless that phase is explicitly resumed.
 
 Rules:
 
-- Keep `@switchboard/core` free of React, Angular, Vue, and UI libraries.
+- Keep `@switchboard-js/core` free of React, Angular, Vue, and UI libraries.
 - Do not add unnecessary dependencies.
 - Write tests alongside implementation.
 - Update `TASKS.md` when phase status changes.
@@ -62,7 +62,7 @@ Full release steps: [RELEASING.md](./RELEASING.md).
 - TypeScript strict mode
 - No `any` unless explicitly justified
 - Prettier for formatting (`pnpm format`)
-- ESLint via `@switchboard/eslint-config`
+- ESLint via `@switchboard-js/eslint-config`
 
 ## Code of conduct
 

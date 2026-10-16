@@ -1,5 +1,5 @@
 {
-  "name": "@switchboard/tsconfig",
+  "name": "@switchboard-js/tsconfig",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",

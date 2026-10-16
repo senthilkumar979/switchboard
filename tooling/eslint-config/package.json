@@ -1,5 +1,5 @@
 {
-  "name": "@switchboard/eslint-config",
+  "name": "@switchboard-js/eslint-config",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",

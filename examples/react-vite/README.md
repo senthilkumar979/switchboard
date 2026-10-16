@@ -1,17 +1,17 @@
 # React + Vite example (Employee BO UI)
 
-E-commerce **employee back-office** console powered by `@switchboard/react`. Looks up a customer by company number, then manages that customer’s products and buyer orders.
+E-commerce **employee back-office** console powered by `@switchboard-js/react`. Looks up a customer by company number, then manages that customer’s products and buyer orders.
 
-Real APIs come from `@switchboard/example-react-next` (proxied at `/api` → `http://localhost:3001`).
+Real APIs come from `@switchboard-js/example-react-next` (proxied at `/api` → `http://localhost:3001`).
 
 ## Run (two terminals)
 
 ```bash
 # Terminal 1 — APIs
-pnpm --filter @switchboard/example-react-next dev
+pnpm --filter @switchboard-js/example-react-next dev
 
 # Terminal 2 — Employee UI
-pnpm --filter @switchboard/example-react-vite dev
+pnpm --filter @switchboard-js/example-react-vite dev
 ```
 
 Open **http://localhost:5174**.

@@ -9,11 +9,12 @@ Track implementation progress by phase. Update checkboxes when work is complete.
 - [x] Configure TypeScript (`tooling/tsconfig`)
 - [x] Configure ESLint and Prettier
 - [x] Configure Vitest (smoke tests on buildable packages)
-- [x] Establish package naming (`@switchboard/*`)
+- [x] Establish package naming (`@switchboard-js/*`)
 - [x] Establish build conventions (tsup) and release conventions (Changesets)
 - [x] Add GitHub Actions CI
 - [x] Add LICENSE and contribution guidelines
-- [x] Scaffold apps (`docs`, `playground`) and example placeholders
+- [x] Scaffold apps (`docs`, `playground` → `web`) and example placeholders
+- [x] Public marketing site + demo (`apps/web`, switchboard.mentorbridge.in)
 - [x] Verify install / build / test / lint / typecheck
 
 **Status:** Complete
@@ -78,6 +79,6 @@ Track implementation progress by phase. Update checkboxes when work is complete.
 
 - [x] Full docs site content
 - [x] Publishing workflow (Changesets + GitHub Actions release)
-- [x] Changelog / versioning polish (`@switchboard/api-mock` publishable)
+- [x] Changelog / versioning polish (`@switchboard-js/api-mock` publishable)
 
 **Status:** Complete

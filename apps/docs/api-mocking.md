@@ -1,18 +1,18 @@
 # API Mocking
 
-`@switchboard/api-mock` patches `fetch` so matching requests return Switchboard-configured status codes and JSON bodies. Unmatched requests pass through unchanged.
+`@switchboard-js/api-mock` patches `fetch` so matching requests return Switchboard-configured status codes and JSON bodies. Unmatched requests pass through unchanged.
 
 ## Install
 
 ```bash
-pnpm add @switchboard/core @switchboard/api-mock
+pnpm add @switchboard-js/core @switchboard-js/api-mock
 ```
 
 ## Enable
 
 ```ts
-import { createSwitchboard } from '@switchboard/core';
-import { enableApiMock } from '@switchboard/api-mock';
+import { createSwitchboard } from '@switchboard-js/core';
+import { enableApiMock } from '@switchboard-js/api-mock';
 
 const switchboard = createSwitchboard({
   responsePresets: [

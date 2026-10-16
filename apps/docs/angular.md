@@ -1,6 +1,6 @@
 # Angular
 
-Angular support is **deferred**. `@switchboard/angular` is a private stub and is not published.
+Angular support is **deferred**. `@switchboard-js/angular` is a private stub and is not published.
 
 ## Planned surface (when resumed)
 
@@ -10,10 +10,10 @@ Angular support is **deferred**. `@switchboard/angular` is a private stub and is
 
 ## Until then
 
-Use `@switchboard/core` from TypeScript services and mount `@switchboard/devtools` as a custom element in `ngAfterViewInit`, or drive state from the React/Vite example for experimentation.
+Use `@switchboard-js/core` from TypeScript services and mount `@switchboard-js/devtools` as a custom element in `ngAfterViewInit`, or drive state from the React/Vite example for experimentation.
 
 ```ts
-import { createSwitchboard } from '@switchboard/core';
+import { createSwitchboard } from '@switchboard-js/core';
 
 export const switchboard = createSwitchboard({
   features: { newDashboard: false },

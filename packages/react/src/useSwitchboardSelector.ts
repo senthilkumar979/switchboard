@@ -1,6 +1,6 @@
 import { useCallback, useSyncExternalStore } from 'react';
 
-import type { SwitchboardState } from '@switchboard/core';
+import type { SwitchboardState } from '@switchboard-js/core';
 
 import { useSwitchboardInstance } from './context.js';
 

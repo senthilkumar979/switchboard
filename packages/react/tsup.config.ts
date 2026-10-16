@@ -11,5 +11,5 @@ export default defineConfig({
   esbuildOptions(options) {
     options.jsx = 'automatic';
   },
-  external: ['react', 'react-dom', '@switchboard/core', '@switchboard/devtools'],
+  external: ['react', 'react-dom', '@switchboard-js/core', '@switchboard-js/devtools'],
 });

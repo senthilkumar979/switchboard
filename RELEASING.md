@@ -2,24 +2,24 @@
 
 Publishable packages:
 
-- `@switchboard/core`
-- `@switchboard/react`
-- `@switchboard/devtools`
-- `@switchboard/api-mock`
+- `@switchboard-js/core`
+- `@switchboard-js/react`
+- `@switchboard-js/devtools`
+- `@switchboard-js/api-mock`
 
 Versioning uses [Changesets](https://github.com/changesets/changesets). Private stubs (`angular`, `vanilla`), apps, examples, and tooling are ignored.
 
 Repository: https://github.com/senthilkumar979/switchboard  
-npm scope: `@switchboard` (org already hosts `@switchboard/web`)
+npm scope: `@switchboard-js` (create this org on npm if it does not exist yet)
 
 ## Prerequisites
 
 1. Push access to `main` on GitHub.
 2. GitHub Actions enabled.
-3. Repository secret `NPM_TOKEN` — an npm **granular access** or **automation** token with write access to the `@switchboard` org (required because the npm account uses 2FA for publishes).
+3. Repository secret `NPM_TOKEN` — an npm **granular access** or **automation** token with write access to the `@switchboard-js` org (required because the npm account uses 2FA for publishes).
 4. Local: Node 20+, pnpm 9.
 
-Create / rotate the token at https://www.npmjs.com/settings/~/tokens → Granular Access Token → read/write for `@switchboard/*` packages (or the whole org).
+Create / rotate the token at https://www.npmjs.com/settings/~/tokens → Granular Access Token → read/write for `@switchboard-js/*` packages (or the whole org).
 
 Add it on GitHub: **Settings → Secrets and variables → Actions → New repository secret** named `NPM_TOKEN`.
 
@@ -44,10 +44,10 @@ If versions are already bumped on `main` (see package `CHANGELOG.md` files):
 1. Confirm `NPM_TOKEN` is set on the GitHub repo.
 2. Push `main` (or re-run the **Release** workflow).
 3. Verify on npm:
-   - https://www.npmjs.com/package/@switchboard/core
-   - https://www.npmjs.com/package/@switchboard/react
-   - https://www.npmjs.com/package/@switchboard/devtools
-   - https://www.npmjs.com/package/@switchboard/api-mock
+   - https://www.npmjs.com/package/@switchboard-js/core
+   - https://www.npmjs.com/package/@switchboard-js/react
+   - https://www.npmjs.com/package/@switchboard-js/devtools
+   - https://www.npmjs.com/package/@switchboard-js/api-mock
 
 ### Manual publish (local fallback)
 
@@ -63,7 +63,7 @@ With 2FA “auth-and-writes”, prefer an automation/granular token in `NPM_TOKE
 Dry-run a tarball before publishing:
 
 ```bash
-pnpm --filter @switchboard/core exec npm pack --dry-run
+pnpm --filter @switchboard-js/core exec npm pack --dry-run
 ```
 
 ## Root changelog

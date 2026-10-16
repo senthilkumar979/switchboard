@@ -1,4 +1,4 @@
-# @switchboard/angular
+# @switchboard-js/angular
 
 Angular adapter for Switchboard.
 

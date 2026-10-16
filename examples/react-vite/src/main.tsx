@@ -1,8 +1,8 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
-import { enableApiMock } from '@switchboard/api-mock';
-import { SwitchboardProvider } from '@switchboard/react';
+import { enableApiMock } from '@switchboard-js/api-mock';
+import { SwitchboardProvider } from '@switchboard-js/react';
 
 import { App } from './App.js';
 import { exampleSwitchboard } from './switchboard.js';
