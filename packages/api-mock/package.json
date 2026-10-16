@@ -1,6 +1,6 @@
 {
   "name": "@switchboard/api-mock",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Fetch interception for Switchboard API mocks",
   "license": "MIT",
   "type": "module",
