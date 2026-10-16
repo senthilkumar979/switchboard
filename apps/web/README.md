@@ -1,11 +1,12 @@
 # @switchboard-js/web
 
-Public Switchboard site for [switchboard.mentorbridge.in](https://switchboard.mentorbridge.in).
+Public Switchboard marketing site for [switchboard.mentorbridge.in](https://switchboard.mentorbridge.in).
 
 - `/` — marketing landing
 - `/demo` — interactive mini console with the real Switchboard panel
 - `/capabilities/:id` — capability deep pages with live previews
-- `/docs/` — VitePress docs (copied into `dist/docs` on build)
+
+Docs are the separate `docs` Vercel service (`apps/docs`), routed at `/docs` via root [`vercel.json`](../../vercel.json).
 
 ```bash
 pnpm --filter @switchboard-js/web dev

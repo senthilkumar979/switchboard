@@ -25,7 +25,7 @@ Public site: [switchboard.mentorbridge.in](https://switchboard.mentorbridge.in)
 pnpm --filter @switchboard-js/web dev
 ```
 
-Marketing landing, interactive demo (`/demo`), capability pages, and VitePress docs merged at `/docs` on build. Deploy with Vercel using the root [`vercel.json`](./vercel.json) (custom domain `switchboard.mentorbridge.in`).
+Marketing landing, interactive demo (`/demo`), and capability pages. VitePress docs are a separate Vercel **service** at `/docs`. Deploy with the root [`vercel.json`](./vercel.json) (set the project framework to **Services**, custom domain `switchboard.mentorbridge.in`).
 
 ## Documentation
 
